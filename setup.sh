@@ -33,7 +33,7 @@ cd /etc/cassandra/
 
 mv cassandra.yaml cassandra.yaml.bak
 
-curl https://$BUCKET.s3-us-west-1.amazonaws.com/cassandra.yaml -o cassandra.yaml
+cp /home/ubuntu/cassandra-bootstrap/cassandra.yaml cassandra.yaml
 
 # Update arguments
 
