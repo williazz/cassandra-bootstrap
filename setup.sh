@@ -35,7 +35,9 @@ mv cassandra.yaml cassandra.yaml.bak
 
 curl https://$BUCKET.s3-us-west-1.amazonaws.com/cassandra.yaml -o cassandra.yaml
 
-sed -i "s/EDIT_ME/$PRIV_IP/g" cassandra.yaml
+# Update arguments
+
+sed -i "s/INSERT_PRIV_IP/$PRIV_IP/g" cassandra.yaml
 
 sed -i "s/INSERT_SEEDS/\"$SEEDS\"/g" cassandra.yaml
 
