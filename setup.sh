@@ -2,7 +2,7 @@
 # sudo sh setup.sh PRIV_IP
 
 PRIV_IP=$1
-SEEDS=172.31.14.73,172.31.15.44
+SEEDS=172.31.11.206,172.31.14.249
 
 CLUSTER=twt_clone
 
